@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow 1/2</title>
+    <style>
+      /* box-shadow = 
+        <inset>
+        <x-offset> (untuk mengatur jarak bayangan pada sumbu horizontal. numerik)
+        <y-offset> (secara horizontal)
+        <spread>
+        <blur> 
+        <color>
+         */
+      div.kesatu {
+        width: 300px;
+        height: 300px;
+        background-color: #39b54a;
+        margin: 50px auto;
+        box-shadow: 0 30px 12px -12px rgba(0, 0, 0, 0.75);
+        /* 0 0 0 10px rgba(0, 0, 0, 0.75) */
+        border-radius: 20px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 40px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        transition: 0.5s;
+      }
+      div.kesatu:hover {
+        box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.15);
+        margin-top: -30px;
+      }
+      div.kedua {
+        width: 300px;
+        height: 300px;
+        background-color: #4d0283;
+        margin: 50px auto;
+        box-shadow: inset 0 0 40px 25px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 40px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        transition: 0.5s;
+        color: white;
+      }
+      div.kedua:hover {
+        box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.15);
+        margin-top: -30px;
+      }
+      /* MULTIPLE BOX SHADOW */
+      div.multiple {
+        width: 300px;
+        height: 300px;
+        background-color: #059c30;
+        margin: 50px auto;
+        box-shadow: 0 0 0 5px red, 0 0 0 10px orange;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 40px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        transition: 0.5s;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kesatu">HAI</div>
+    <div class="kedua">NAMA</div>
+    <div class="multiple">FADHLAN</div>
+  </body>
+</html>

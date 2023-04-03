@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opacity</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: black;
+        height: 1000px;
+      }
+
+
+
+      /* MULAI MATERI  */
+      div.satu {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background: rgba(250, 126, 112, 0.4); /* pada wanrna saja */
+        /* opacity: 0.4; transparan pada elemen*/
+      }
+      .dua {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(37, 150, 190, 0.3);
+        bottom: -50px;
+        right: -50px;
+      }
+      .hsla {
+        width: 300px;
+        height: 300px;
+        background-color: hsla(24, 100%, 63%, .5);
+      }
+      /* AKHIR MATERI */
+
+
+
+      header {
+        /* display: flex;
+        flex-direction: column; */
+
+        margin: -40px auto 0 auto;
+      }
+      .p1 {
+        color: aqua;
+        font-size: 50px;
+        display: inherit;
+        text-align: center;
+      }
+      header p:first-child::before,
+      header p:first-child::after {
+        content: " ";
+        width: 3.4em;
+        height: 10px;
+        display: inline-block;
+        border-bottom: 1px solid #888;
+        position: relative;
+        top: -0.35em;
+        margin: 0 0.5em;
+      }
+      div.container-belajar {
+        background-color: blueviolet;
+        width: 700px;
+        height: 500px;
+        margin: -40px auto 0 auto;
+        position: relative;
+        z-index: 1;
+        
+      }
+     
+      .tengah {
+        width: 200px;
+        height: 12px;
+        border-radius:40px;
+        background: #666666;
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        
+      }
+      .kotak1 {
+      
+        left: 20px;
+      }
+      .kotak2 {
+   
+        right: 20px;
+      }
+      p.praga {
+        font-size: 30px;
+        text-align: center;
+        color: antiquewhite;
+        
+        position: absolute;
+        top: -2px;
+        left: 50px;
+        right: 50px;
+       
+        
+      }
+      /* .konten {
+        width: 500px;
+        height: 500px;
+        background-color: #888;
+        margin: auto;
+      }
+      .konten .circle {
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        margin: auto;
+      }*/
+    </style> 
+  <body>
+    <header><p class="p1">MUHAMMMAD FADHLAN</p></header>
+    <!-- Jangan pernah mengharap balas budi kepada orang yang telah kamu bantu. @xyzlanzz 2023 -->
+    <div class="container-belajar">
+      <div class="kotak1 tengah"></div>
+      <p class="praga">WAHAI KAMU</p>
+      <div class="kotak2 tengah"></div>
+    </div> 
+
+
+
+    <!-- MULAI MATERI  -->
+    <div class="satu">
+      <div class="dua"></div>
+    </div>
+    <div class="hsla">
+      <!-- H = warnanya hue
+           S = Saturation
+           L = Lightness Kecerahan
+           A = Alpha -->
+    </div>
+    <!-- AKHIR MATERI -->
+
+
+
+
+
+    <!-- <div class="konten">
+      <div class="circle"></div>
+    </div>  -->
+  </body>
+</html>
