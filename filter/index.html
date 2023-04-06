@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <style>
+      @font-face {
+        font-family: "alex_brushregular";
+        src: url("./fonts/alexbrush-regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "open_sansregular";
+        src: url("fonts/OpenSans-Regular-webfont.eot");
+        src: url("fonts/OpenSans-Regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+          url("fonts/OpenSans-Regular-webfont.woff") format("woff"),
+          url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"),
+          url("fonts/OpenSans-Regular-webfont.svg#open_sansregular")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* Filter
+        blur(px)
+        brightness(angka | %)
+        contrast(angka | %)
+        saturate(angka | %)
+        grayscale(angka | %)
+        sepia(angka | %)
+        hue-rotate(deg)
+        invert(angka | %)
+        opacity(angka | %)
+        drop-shadow(sama seperti box-shadow)
+        angka = 0/1 / .5
+
+        */
+      body {
+        text-align: center;
+        background-color: darkgray;
+      }
+      .container {
+        width: 80%;
+        height: 800px;
+        outline: dashed 1px black;
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: cencter;
+        align-items: center;
+      }
+      h1 {
+        display: block;
+        font-size: 100px;
+        text-transform: initial;
+        font-family: "alex_brushregular", arial;
+        filter: drop-shadow(12px 3px 8px black);
+        color: coral;
+        margin: 0;
+      }
+      img {
+        width: 400px;
+        aspect-ratio: 1/1;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 5px;
+        filter: drop-shadow(0 0 0 black) saturate(0);
+        display: block;
+        /* position: absolute;
+        top: 17%;
+        left: 30%; */
+      }
+      img:hover {
+        filter: drop-shadow(5px 3px 8px black) saturate(200%);
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Reemar My Wife</h1>
+      <img src="img/reemar.jpg" alt="poto reemar" />
+      <!-- https://cssgenerator.org/filter-css-generator.html -->
+    </div>
+  </body>
+</html>
