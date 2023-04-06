@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient - radial</title>
+    <style>
+      /* radial-gradient (
+            <tipe> <jangkauan> at <posisi-y> <posisi-x>
+            <warna-1>,
+            <warna-2>,
+            ..,
+            <warna-n>
+        ) */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        height: 1000px;
+        outline: dashed 1px black;
+        margin: 20px auto;
+        position: relative;
+      }
+      section.section1 {
+        margin: 20px auto;
+      }
+      .lol {
+        width: 300px;
+        height: 300px;
+        color: whitesmoke;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(black 10%, red, green 80%);
+      }
+      .complex {
+        width: 400px;
+        height: 300px;
+        color: whitesmoke;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-image: radial-gradient(circle closest-side, red, blue); */
+        /* background-image: radial-gradient(circle farthest-corner, red, blue); */
+        background-image: radial-gradient(
+          circle farthest-corner at top left,
+          red,
+          blue
+        );
+        /* posisi bisa pakai px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="lol section1">LOL</section>
+      <section class="complex section1">LOLI</section>
+    </div>
+  </body>
+</html>

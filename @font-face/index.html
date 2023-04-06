@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Face</title>
+    <style>
+      @font-face {
+        font-family: "alex_brushregular";
+        src: url("./fonts/alexbrush-regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "open_sansregular";
+        src: url("fonts/OpenSans-Regular-webfont.eot");
+        src: url("fonts/OpenSans-Regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+          url("fonts/OpenSans-Regular-webfont.woff") format("woff"),
+          url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"),
+          url("fonts/OpenSans-Regular-webfont.svg#open_sansregular")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1 {
+        font-size: 140px;
+        text-align: center;
+        font-family: "open_sansregular";
+      }
+      h2 {
+        font-size: 100px;
+        text-align: center;
+        font-family: "alex_brushregular", arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h2>Selamat Datang</h2>
+  </body>
+</html>
